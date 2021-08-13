@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Members</title>
+</head>
+<body>
+    <h1>Family Members</h1>
+    <ul>
+        ${family.map((member) =>{
+            return `<li>${member.name} <button onclick="getMemberDetails(`${member.id}`)">See Details</button></li> `
+        }).join('')}
+        
+    </ul>
+    <script>
+
+        getMemberDetails = (memberId) => {
+            console.log(memberId)
+
+        }
+
+    </script>
+</body>
+</html>
